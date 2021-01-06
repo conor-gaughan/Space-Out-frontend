@@ -1,0 +1,15 @@
+
+.navBar {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.navItems {
+    text-decoration: none;
+    padding: 20px;
+}
