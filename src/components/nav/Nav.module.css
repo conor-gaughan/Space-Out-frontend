@@ -2,11 +2,9 @@
 .Nav {
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
-    color: white;
-    font-size: 2rem; 
 }
 
 .Nav > ul {
@@ -16,5 +14,10 @@
 }
 
 .Nav > ul li {
-    padding: 0 20px;
+    padding: 0 10px;
+}
+
+.Nav a {
+    text-decoration: none;
+    color: white;
 }
