@@ -2,17 +2,17 @@ import styles from './Nav.module.css'
 
 function NavBar() {
     return (
-        <header>
+        <nav className={styles.Nav}>
 
 
-        <ul className={styles.navBar}>
-            <li className={styles.navItems}>Home</li>
-            <li className={styles.navItems}>Rockets</li>
-            <li className={styles.navItems}>Roadster</li>
-            <li className={styles.navItems}>Favorites</li>
+        <ul>
+            <li>Home</li>
+            <li>Rockets</li>
+            <li>Roadster</li>
+            <li>Favorites</li>
         </ul>
         
-        </header>
+        </nav>
     )
 }
 

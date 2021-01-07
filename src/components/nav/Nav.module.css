@@ -1,15 +1,20 @@
 
-.navBar {
+.Nav {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     color: white;
-    font-size: 2rem;
+    font-size: 2rem; 
 }
 
-.navItems {
-    text-decoration: none;
+.Nav > ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.Nav > ul li {
     padding: 20px;
 }
