@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
    
 function HomePage(props) {
 
@@ -19,22 +20,30 @@ function HomePage(props) {
             <Wrapper>
                 <Section>
                     <section>
+                        <Link to='/rockets'>
                         <h1>Rocket 🚀</h1>
+                        </Link>
                     </section>
                 </Section>
                 <Section>
                     <section>
-                        <h1>Rocket 🚀</h1>
+                        <Link to='/crew'>
+                        <h1>Crew 🚀</h1>
+                        </Link>
                     </section>
                 </Section>
                 <Section>
                     <section>
-                        <h1>Rocket 🚀</h1>
+                        <Link to='/launch'>
+                        <h1>Launch 🚀</h1>
+                        </Link>
                     </section>
                 </Section>
                 <Section>
                     <section>
-                        <h1>Rocket 🚀</h1>
+                        <Link to='roadster'>
+                        <h1>Roadster 🚀</h1>
+                        </Link>
                     </section>
                 </Section>
             

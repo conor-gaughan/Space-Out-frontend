@@ -2,7 +2,14 @@
 
 function RocketPage(props) {
     return (
-        <div>In Rocket Page</div>
+        <div>
+            {props.rocketData.map((rocket, idx) => (
+                <>
+                <p>{rocket.name}</p>
+                <p>{rocket.country}</p>
+                </>
+            ))}
+        </div>
     )
 }
 

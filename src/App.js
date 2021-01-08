@@ -1,7 +1,7 @@
 import { getUser, logout } from './services/userService'
 
 import {useState, useEffect} from 'react';
-import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
+import { Switch, Route, withRouter, Redirect, Link } from 'react-router-dom';
 
 import NavBar from './components/Nav';
 import Footer from './components/Footer';
@@ -11,6 +11,10 @@ import SignupPage from './pages/SignUpPage'
 import LoginPage from './pages/LoginPage'
 
 import RocketPage from './pages/RocketPage'
+import CrewPage from './pages/CrewPage'
+import LaunchPage from './pages/LaunchPage'
+import RoadsterPage from './pages/RoadsterPage'
+
 
 
 import { rocketDataAPI, crewDataAPI, launchDataAPI, roadsterDataAPI } from './services/APIData'
@@ -80,6 +84,7 @@ function App(props) {
       <main>
         <Route exact path='/' render={props => <HomePage 
         {...props}
+        
         /> } />
         <Route exact path='/dashboard' render={props => 
         userState.user ? 
@@ -95,12 +100,31 @@ function App(props) {
         <LoginPage {...props} 
         handleSignupOrLogin={handleSignUpOrLogin}
         /> } />
+      
+        <Route exact path='/rockets' render={props => 
+          <RocketPage 
+          rocketData={rocketData}
+        /> } />
+        <Route exact path='/crew' render={props => 
+          <CrewPage 
+          crewData={crewData}
+        /> } />
+        <Route exact path='/launch' render={props => 
+          <LaunchPage 
+          launchData={launchData}
+        /> } />
+        <Route exact path='/roadster' render={props => 
+          <RoadsterPage 
+          roadsterData={roadsterData}
+        /> } />
 
         
 
       </main>
       </Switch>
+      <Link to='/'>
       <Footer />
+      </Link>
     </div>
   );
 }
