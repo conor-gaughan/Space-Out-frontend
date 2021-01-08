@@ -10,6 +10,8 @@ import DashboardPage from './pages/DashboardPage'
 import SignupPage from './pages/SignUpPage'
 import LoginPage from './pages/LoginPage'
 
+import RocketPage from './pages/RocketPage'
+
 
 import { rocketDataAPI, crewDataAPI, launchDataAPI, roadsterDataAPI } from './services/APIData'
 
@@ -93,6 +95,8 @@ function App(props) {
         <LoginPage {...props} 
         handleSignupOrLogin={handleSignUpOrLogin}
         /> } />
+
+        
 
       </main>
       </Switch>
