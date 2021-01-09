@@ -5,7 +5,7 @@ import { Switch, Route, withRouter, Redirect, Link } from 'react-router-dom';
 
 import NavBar from './components/Nav';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage'
+import HomePage from './components/NavAPI'
 import DashboardPage from './pages/DashboardPage'
 import SignupPage from './pages/SignUpPage'
 import LoginPage from './pages/LoginPage'
@@ -14,6 +14,8 @@ import RocketPage from './pages/RocketPage'
 import CrewPage from './pages/CrewPage'
 import LaunchPage from './pages/LaunchPage'
 import RoadsterPage from './pages/RoadsterPage'
+
+import RocketDetailPage from './pages/RocketDetailPage/RocketDetailPage'
 
 
 
@@ -103,7 +105,12 @@ function App(props) {
       
         <Route exact path='/rockets' render={props => 
           <RocketPage 
+          {...props}
           rocketData={rocketData}
+        /> } />
+        <Route path='/rockets/:id' render={props => 
+          <RocketDetailPage 
+            rocket={rocketData[props.match.params.id]}
         /> } />
         <Route exact path='/crew' render={props => 
           <CrewPage 
@@ -118,7 +125,7 @@ function App(props) {
           roadsterData={roadsterData}
         /> } />
 
-        
+    
 
       </main>
       </Switch>

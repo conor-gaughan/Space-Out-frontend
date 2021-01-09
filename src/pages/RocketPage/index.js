@@ -1,12 +1,13 @@
-
+import { Link } from 'react-router-dom'
 
 function RocketPage(props) {
     return (
         <div>
-            {props.rocketData.map((rocket, idx) => (
+            {props.rocketData.map((rockets, idx) => (
                 <>
-                <p>{rocket.name}</p>
-                <p>{rocket.country}</p>
+                <Link to={`/rockets/${idx}`}>
+                <p>{rockets.name}</p>
+                </Link>
                 </>
             ))}
         </div>

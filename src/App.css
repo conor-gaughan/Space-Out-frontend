@@ -5,8 +5,12 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  
 }
 
 .App main {
   flex-grow: 1;
+
 }

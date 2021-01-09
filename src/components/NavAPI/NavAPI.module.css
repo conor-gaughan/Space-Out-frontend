@@ -1,0 +1,10 @@
+.hoverTest {
+    background-color: pink;
+    overflow: hidden;
+    background-clip: padding-box;
+}
+
+
+.hoverTest h1 {
+    height: 100%;
+}
