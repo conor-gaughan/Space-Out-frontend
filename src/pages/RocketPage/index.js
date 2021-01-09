@@ -7,6 +7,7 @@ function RocketPage(props) {
                 <>
                 <Link to={`/rockets/${idx}`}>
                 <p>{rockets.name}</p>
+                <img src={`${rockets.flickr_images[1]}`} alt={`${rockets.name}`}></img>
                 </Link>
                 </>
             ))}

@@ -49,25 +49,25 @@ function App(props) {
   async function getRocketData() {
     const data = await rocketDataAPI()
     setRocketData(data)
-    console.log('Rocket Data', data)
+    // console.log('Rocket Data', data)
   }
 
   async function getCrewData() {
     const data = await crewDataAPI()
     setCrewData(data)
-    console.log('Crew Data', data)
+    // console.log('Crew Data', data)
   }
 
   async function getLaunchData() {
     const data = await launchDataAPI()
     setLaunchData(data)
-    console.log('Launch Data', data)
+    // console.log('Launch Data', data)
   }
 
   async function getRoadsterData() {
     const data = await roadsterDataAPI()
     setRoadsterData(data)
-    console.log('Roadster Data', data)
+    console.log('ROADSTER DATA', data)
   }
 
   useEffect(() => {

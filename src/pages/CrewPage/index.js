@@ -8,7 +8,7 @@ function CrewPage(props) {
                 <>
                 <Link to={`${crew.wikipedia}`}>
                 <p>{crew.name}</p>
-                <img src={`${crew.image}`} alt={`${crew.name}`} width="1000" height="1000"></img>
+                <img src={`${crew.image}`} alt={`${crew.name}`} width='1000px'></img>
                 </Link>
                 </>
             ))}
