@@ -49,7 +49,7 @@ function HomePage(props) {
                 <Section>
                     <section>
                         <Link to='/launch'>
-                        <h1>Launch 🚀</h1>
+                        <h1>Launches 🚀</h1>
                         <p>Content content content</p>
                         </Link>
                     </section>
