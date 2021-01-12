@@ -21,7 +21,7 @@ import RocketDetailPage from './pages/RocketDetailPage/RocketDetailPage'
 
 import { rocketDataAPI, crewDataAPI, launchDataAPI, roadsterDataAPI } from './services/APIData'
 
-import './App.css';
+import './App.scss';
 
 function App(props) {
   const [ userState, setUserState ] = useState({

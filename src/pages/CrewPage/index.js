@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
+import styles from './CrewPage.module.scss'
 
 function CrewPage(props) {
     return (
         <div>
-            <h1>Crew Page</h1>
+            <h1 className={styles.fontTest}>Crew Page</h1>
             {props.crewData.map((crew, idx) => (
                 <>
                 <Link to={`${crew.wikipedia}`}>
