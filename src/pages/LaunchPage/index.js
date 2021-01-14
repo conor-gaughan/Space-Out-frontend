@@ -5,12 +5,12 @@ function LaunchPage(props) {
         <div>
             <h1>Launches</h1>
             {props.launchData.map((launch, idx) => (
-                // <video width="320" height="240">
-                //     <source src={`${launch.webcast}`}></source>
-                // </video>
-                // <img src={`${launch.flickr.original[0]}`} alt="Girl in a jacket" width="500" height="600"> </img>
-                <p>{launch.flight_number}</p>
-                
+                <>
+                <h3>{launch.name}</h3>
+                <p>{new Date(launch.date_local).toLocaleString()}</p>
+                <p>{launch.details}</p>
+                {/* new Date(flight.date_local).toLocaleString() */}
+                </>
             ))}
         </div>
     )

@@ -13,7 +13,7 @@ function crewDataAPI() {
 }
 
 function launchDataAPI() {
-    return fetch(`${BASE_URL}launches`)
+    return fetch(`${BASE_URL}launches/upcoming`)
     .then(res => res.json())
 }
 

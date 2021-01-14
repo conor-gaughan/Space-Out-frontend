@@ -1,0 +1,69 @@
+@import '../../App.scss';
+
+.Header {
+    color: white;
+    text-align: center;
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.Main {
+    font-family: $font-stack;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
+    min-height: 200px;
+    // max-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    section {
+        // border: 2px solid red;
+        margin: 0 10px;
+        height: 500px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            font-weight: bold;
+            background-color: white;
+            border-radius: 10px;
+            a {
+                color: black;
+            } 
+        }
+        img {
+            width: 100%;
+            height: 100px;
+        } 
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.Astronaut {
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.Rocket img {
+    transform: rotate(315deg);
+}
+
+.Rocket img:hover {
+    position: relative;
+    animation: takeoff 5s infinite;
+  }
+  
+  @keyframes takeoff {
+    0%   {bottom: 0px;}
+    25%  {bottom: 60px;}
+  }

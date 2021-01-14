@@ -14,6 +14,7 @@ import RocketPage from './pages/RocketPage'
 import CrewPage from './pages/CrewPage'
 import LaunchPage from './pages/LaunchPage'
 import RoadsterPage from './pages/RoadsterPage'
+import FavoritesPage from './pages/FavoritesPage'
 
 import RocketDetailPage from './pages/RocketDetailPage/RocketDetailPage'
 
@@ -21,7 +22,7 @@ import RocketDetailPage from './pages/RocketDetailPage/RocketDetailPage'
 
 import { rocketDataAPI, crewDataAPI, launchDataAPI, roadsterDataAPI } from './services/APIData'
 
-import './App.css';
+import './App.scss';
 
 function App(props) {
   const [ userState, setUserState ] = useState({
@@ -123,6 +124,11 @@ function App(props) {
         <Route exact path='/roadster' render={props => 
           <RoadsterPage 
           roadsterData={roadsterData}
+        /> } />
+
+        <Route exact path='/favorites' render={props => 
+          <FavoritesPage 
+    
         /> } />
 
     
