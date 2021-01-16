@@ -1,9 +1,13 @@
 
+@import '../../App.scss';
+
 
 .Upcoming {
     // margin-left: 40px;
-    width: 100%;
-} h1 {
+    font-size: 400px;
+} 
+
+.Upcoming h1 {
     overflow: hidden;
     border-right: .15em solid orange;
     white-space: nowrap;
@@ -16,9 +20,14 @@
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: bold;
-} h2, p{
-    padding-left: 60px;
-}
+} 
+
+// .Upcoming h2, p {
+//     padding-left: 60px;
+// }
+// .Upcoming p {
+//     padding-left: 60px;
+// }
 
 @keyframes typing {
     from { width: 0 }

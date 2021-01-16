@@ -9,12 +9,16 @@
     margin: 0;
 }
 
+// h1, p {
+//     text-align: center;
+// }
+
 .Main {
     font-family: $font-stack;
     display: flex;
     justify-content: center;
     align-items: center;
-    // flex-wrap: wrap;
+    
     min-height: 200px;
     // max-height: 20px;
     text-align: center;
@@ -22,6 +26,7 @@
     font-size: 1.1rem;
     section {
         // border: 2px solid red;
+        text-align: center;
         margin: 0 10px;
         height: 500px;
         width: 20%;

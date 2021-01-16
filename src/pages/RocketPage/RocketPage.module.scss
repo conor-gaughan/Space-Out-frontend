@@ -8,13 +8,16 @@
     flex-wrap: wrap;
     height: 600px; 
     text-align: center;
-} a{
+    font-size: 10px;
+} a {
     color: $primary-color;
     text-decoration: none;
     text-transform: uppercase;
 
-} img {
-    height: 220px;
+} 
+
+.Rockets img {
+    height: 320px;
     width: 320px;
     margin: 10px;
     border-radius: 10px;

@@ -9,16 +9,24 @@
   flex-wrap: wrap;
   text-align: center;
  
-} img {
-  height: 400px;
-  width: 400px;
-  
-} h2 {
+}  
+
+.Crew h2 {
   // padding: 0 10px;
   margin: 0;
   margin-bottom: 10px;
   font-size: 2rem;
-} p {
+} 
+
+.Crew p {
   margin: 10px;
   font-size: 1.5rem;
+}
+
+.Crew img {
+  height: 500px;
+  width: 600px;
+  margin: 10px;
+  border-radius: 10px;
+  
 }
