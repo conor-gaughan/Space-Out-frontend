@@ -16,7 +16,7 @@ import LaunchPage from './pages/LaunchPage'
 import RoadsterPage from './pages/RoadsterPage'
 import FavoritesPage from './pages/FavoritesPage'
 
-import RocketDetailPage from './pages/RocketDetailPage/RocketDetailPage'
+import RocketDetailPage from './pages/RocketDetailPage'
 
 
 
