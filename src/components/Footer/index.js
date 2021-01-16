@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-import github from '../../Images/011-github-sign.svg'
+
 
 
 function Footer() {
