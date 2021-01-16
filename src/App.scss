@@ -6,7 +6,7 @@ $primary-color: #fff;
   margin: 0;
   box-sizing: border-box;
   background-color: #000;
-  font-style: $font-stack;
+  font-family: $font-stack;
   color: $primary-color;
   min-height: 100vh;
   display: flex;
@@ -15,5 +15,4 @@ $primary-color: #fff;
 
 .App main {
   flex-grow: 1;
-
 }
