@@ -1,6 +1,24 @@
 @import "../../App.scss";
 
-.fontTest {
-  font: $font-stack;
+.Crew {
+  font-style: $font-stack;
   color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+ 
+} img {
+  height: 400px;
+  width: 400px;
+  
+} h2 {
+  // padding: 0 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 2rem;
+} p {
+  margin: 10px;
+  font-size: 1.5rem;
 }

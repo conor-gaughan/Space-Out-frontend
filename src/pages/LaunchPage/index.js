@@ -1,15 +1,14 @@
-
+import styles from "./UpcomingLaunches.module.scss"
 
 function LaunchPage(props) {
     return (
-        <div>
-            <h1>Launches</h1>
+        <div styles={styles.Upcoming}>
+            <h1>Upcoming Launches</h1>
             {props.launchData.map((launch, idx) => (
                 <>
-                <h3>{launch.name}</h3>
-                <p>{new Date(launch.date_local).toLocaleString()}</p>
+                <h2>{launch.name}</h2>
+                <h2>{new Date(launch.date_local).toLocaleString()}</h2>
                 <p>{launch.details}</p>
-                {/* new Date(flight.date_local).toLocaleString() */}
                 </>
             ))}
         </div>

@@ -1,0 +1,21 @@
+@import '../../App.scss';
+
+
+.Rockets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px; 
+    text-align: center;
+} a{
+    color: $primary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+} img {
+    height: 220px;
+    width: 320px;
+    margin: 10px;
+    border-radius: 10px;
+}
