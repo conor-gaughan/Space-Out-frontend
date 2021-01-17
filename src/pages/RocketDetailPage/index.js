@@ -3,7 +3,7 @@ import styles from './RocketDetailPage.module.scss'
 function RocketDetailPage(props) {
     
     return (
-        <>
+        <div className={styles.RocketDetails}>
         <h1>Rocket Detail Page</h1>
         <p style={{color: 'red'}}>Consider a table</p>
         <p>Name: {props.rocket.name}</p>
@@ -15,7 +15,7 @@ function RocketDetailPage(props) {
         <p>First flight: {props.rocket.first_flight}</p>
 
         
-        </>
+        </div>
     )
 }
 

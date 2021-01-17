@@ -12,7 +12,7 @@ function NavBar(props) {
                                 <Link to="" onClick={props.handleLogout}>Logout</Link>
                             </li>
                             <li>
-                                <Link to="/dashboard">Dashboard</Link>
+                                <Link to="/">Misson Control</Link>
                             </li>
                         </>
                         :
