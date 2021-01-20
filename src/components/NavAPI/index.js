@@ -18,21 +18,21 @@ function HomePage(props) {
                         <p>3...2...1...</p>
                         </Link>
                     </section>
-                    <section>
+                    <section className={styles.LostInSpace}>
                         <Link to='/crew'>
                         <img src={crewImg} alt='astronaut icon 1' tabIndex="2"></img>
                         <h1>Crews</h1>
                         <p>Astronauts!</p>
                         </Link>
                     </section>
-                    <section>
+                    <section className={styles.Planets}>
                         <Link to='/launch'>
                         <img src={planetImg} alt='upcoming launches icon' tabIndex="3"></img>
                         <h1>Launches</h1>
                         <p>Upcoming launches</p>
                         </Link>
                     </section>
-                    <section>
+                    <section className={styles.Roadster}>
                         <Link to='roadster'>
                         <img src={roadsterImg} alt='sports car icon' tabIndex="4"></img>
                         <h1>Roadster</h1>

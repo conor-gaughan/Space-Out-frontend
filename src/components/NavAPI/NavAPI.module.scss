@@ -67,10 +67,53 @@
 
 .Rocket img:hover {
     position: relative;
-    animation: takeoff 1.5s infinite;
+    animation: takeoff 3.5s infinite;
   }
   
   @keyframes takeoff {
     0%   {bottom: 0px;}
-    100%  {bottom: 40px;}
+    100%  {bottom: 100px;}
   }
+
+  .LostInSpace img:hover {
+    position: relative;
+    animation: astronaut 6.5s infinite;
+  }
+
+  @keyframes astronaut {
+    0%   {height: 100px;}
+    100%  {height: 5px;}
+  }
+
+  .Planets img:hover {
+    position: relative;
+    animation: planets 6.5s;
+  }
+
+  @keyframes planets {
+    0%   {rotate: 10deg;}
+    100%  {rotate: 360deg;}
+  }
+
+  .Roadster img:hover {
+    position: relative;
+    animation: roadster 4.5s;
+  }
+
+  @keyframes roadster {
+    0%   {left: 0px;}
+    100%  {left: 100px;}
+  }
+
+  
+
+//   @media (max-width: 1200px) {
+//       div {
+//           flex-wrap: wrap;
+//           justify-content: center;
+//           align-items: center;
+//       }
+//       div section {
+//           height: 50px;
+//       }
+//   }

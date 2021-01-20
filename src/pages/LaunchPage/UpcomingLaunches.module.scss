@@ -1,40 +1,43 @@
 
-@import '../../App.scss';
-
+// @import '../../App.scss';
 
 .Upcoming {
-    // margin-left: 40px;
-    font-size: 4600px;
-} 
-
-.Upcoming h1 {
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    margin: 10 auto;
-    letter-spacing: .15em;
-    // animation: 
-    // typing 3.5s steps(40, end),
-    // blink-caret .75s step-end infinite;
-    text-align: center;
-    text-transform: uppercase;
     font-size: 3rem;
-    font-weight: bold;
-} 
+}
 
-// .Upcoming h2, p {
-//     padding-left: 60px;
-// }
-// .Upcoming p {
-//     padding-left: 60px;
-// }
+// .Upcoming {
+//     // margin-left: 40px;
+//     // font-size: 4600px;
+// } 
 
-// @keyframes typing {
-//     from { width: 0 }
-//     to { width: 60% }
-// }
+// .Upcoming h1 {
+//     overflow: hidden;
+//     border-right: .15em solid orange;
+//     white-space: nowrap;
+//     margin: 10 auto;
+//     letter-spacing: .15em;
+//     // animation: 
+//     // typing 3.5s steps(40, end),
+//     // blink-caret .75s step-end infinite;
+//     text-align: center;
+//     text-transform: uppercase;
+//     font-size: 3rem;
+//     font-weight: bold;
+// } 
 
-// @keyframes blink-caret {
-//     from, to { border-color: transparent }
-//     50% { border-color: orange; }
-//   }
+// // .Upcoming h2, p {
+// //     padding-left: 60px;
+// // }
+// // .Upcoming p {
+// //     padding-left: 60px;
+// // }
+
+// // @keyframes typing {
+// //     from { width: 0 }
+// //     to { width: 60% }
+// // }
+
+// // @keyframes blink-caret {
+// //     from, to { border-color: transparent }
+// //     50% { border-color: orange; }
+// //   }

@@ -1,8 +1,7 @@
-import styles from "./UpcomingLaunches.module.scss"
 
 function LaunchPage(props) {
     return (
-        <div styles={styles.Upcoming}>
+        <div>
             <h1>Upcoming Launches</h1>
             {props.launchData.map((launch, idx) => (
                 <>
