@@ -1,3 +1,5 @@
+import styles from './Login.module.scss'
+
 import { useState } from 'react'
 import { login } from '../../services/userService'
 
@@ -7,8 +9,6 @@ function LoginPage(props) {
 
     function getInitialFormState() {
         return {
-            firstName: "",
-            lastName: "",
             email: "",
             password: ""
         }
@@ -26,7 +26,7 @@ function LoginPage(props) {
             event.preventDefault();
             await login(formState)
             setFormState(getInitialFormState)
-            props.history.push('/dashboard')
+            props.history.push('/')
 
         } catch (error) {
             alert(error.message)
@@ -35,22 +35,29 @@ function LoginPage(props) {
     }
 
     return (
-        <div className="Page">
+        
+        <div className={styles.Login}>
+            {/* <h1>LOGIN PAGE</h1> */}
             <form onSubmit={handleSubmit}>   
                 <input 
                 value={formState.email} 
                 onChange={handleChange} 
                 name="email" 
-                type='email'>
+                type='email'
+                placeholder="Email"
+                >
                 </input>
                 
                 <input 
                 value={formState.password} 
                 onChange={handleChange} 
                 name="password" 
-                type='password'>
+                type='password'
+                placeholder="Password"
+                >
                 </input>
-                <button>Sign up</button>
+                
+                <button>Login</button>
             </form>
         </div>
     )

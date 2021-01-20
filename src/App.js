@@ -85,16 +85,16 @@ function App(props) {
       </header>
       <Switch>
       <main>
-        {/* <Route exact path='/' render={props => 
+        <Route exact path='/' render={props => 
         <HomePage /> 
         
-        } /> */}
-        <Route exact path='/' render={props => 
+        } />
+        {/* <Route exact path='/' render={props => 
         userState.user ? 
         <HomePage /> 
         :
         <Redirect to="/" />
-      } />
+      } /> */}
         <Route exact path='/signup' render={props => 
         <SignupPage {...props} 
         handleSignupOrLogin={handleSignUpOrLogin}
