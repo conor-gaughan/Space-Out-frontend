@@ -108,11 +108,17 @@ function App(props) {
           <RocketPage 
           {...props}
           rocketData={rocketData}
+          user={userState}
         /> } />
         <Route path='/rockets/:id' render={props => 
+          userState.user ?
           <RocketDetailPage 
             rocket={rocketData[props.match.params.id]}
-        /> } />
+            
+            /> 
+            :
+            <Redirect to ='/' />
+            } />
         <Route exact path='/crew' render={props => 
           <CrewPage 
           crewData={crewData}

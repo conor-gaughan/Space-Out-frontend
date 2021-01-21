@@ -33,6 +33,7 @@ function SignupPage(props) {
             await signup(formState)
             setFormState(getInitialFormState)
             props.history.push('/dashboard')
+            props.handleSignupOrLogin()
 
         } catch (error) {
             alert(error.message)

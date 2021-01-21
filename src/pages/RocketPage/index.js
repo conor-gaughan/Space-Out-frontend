@@ -12,9 +12,10 @@ function RocketPage(props) {
                 <img src={`${rockets.flickr_images[2] || rockets.flickr_images[0]}`} alt={`${rockets.name}`}></img>
                 <h1>{rockets.name}</h1>
                 </Link>
-            
                 </>
             ))}
+            {props.user.user == null ? <p>Login to see rocket details!</p> : <p></p>}
+            
         </div>
     )
 }

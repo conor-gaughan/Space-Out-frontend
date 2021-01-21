@@ -5,7 +5,6 @@ function RocketDetailPage(props) {
     return (
         <div className={styles.RocketDetails}>
         <h1>Rocket Detail Page</h1>
-        <p style={{color: 'red'}}>Consider a table</p>
         <p>Name: {props.rocket.name}</p>
         <p>Description: {props.rocket.description}</p>
         <p>Active: {props.rocket.active}</p>
@@ -13,8 +12,6 @@ function RocketDetailPage(props) {
         <p>Height: {props.rocket.height.feet}</p>
         <p>Cost per launch: {props.rocket.cost_per_launch}</p>
         <p>First flight: {props.rocket.first_flight}</p>
-
-        
         </div>
     )
 }

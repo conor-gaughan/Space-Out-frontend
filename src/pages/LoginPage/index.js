@@ -27,6 +27,7 @@ function LoginPage(props) {
             await login(formState)
             setFormState(getInitialFormState)
             props.history.push('/')
+            props.handleSignupOrLogin()
 
         } catch (error) {
             alert(error.message)
