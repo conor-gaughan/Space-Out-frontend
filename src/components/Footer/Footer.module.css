@@ -8,5 +8,9 @@
     color: white;
     text-align: center;
     /* font-size: 2rem; */
-    margin: 10px;
+    /* margin: 10px; */
+}
+
+.Footer a {
+    margin: 0 10px;
 }

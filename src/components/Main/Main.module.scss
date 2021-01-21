@@ -29,7 +29,7 @@
         // border: 2px solid red;
         text-align: center;
         margin: 0 10px;
-        height: 500px;
+        height: 450px;
         width: 20%;
         display: flex;
         justify-content: center;
@@ -117,3 +117,28 @@
   //         height: 50px;
   //     }
   // }
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .Main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .Main section {
+      height: 250px;
+      padding: 20 0px;
+      margin: 0 auto;
+    }
+
+    .Astronaut {
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+}

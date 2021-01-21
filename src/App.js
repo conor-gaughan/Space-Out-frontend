@@ -5,7 +5,7 @@ import { Switch, Route, withRouter, Redirect, Link } from 'react-router-dom';
 
 import NavBar from './components/Nav';
 import Footer from './components/Footer';
-import HomePage from './components/NavAPI'
+import HomePage from './components/Main'
 import DashboardPage from './pages/DashboardPage'
 import SignupPage from './pages/SignUpPage'
 import LoginPage from './pages/LoginPage'

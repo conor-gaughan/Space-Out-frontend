@@ -2,13 +2,14 @@
 
 
 .Rockets {
+    font-style: $font-stack;
+    color: $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 600px; 
     text-align: center;
-    font-size: 10px;
+    width: 100vw;
 } a {
     color: $primary-color;
     text-decoration: none;

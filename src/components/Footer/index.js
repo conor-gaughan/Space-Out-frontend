@@ -15,6 +15,7 @@ function Footer() {
             </Link>
         {/* <p> {new Date().getFullYear()} </p> */}
         {/* <img style={{backgroundColor: 'red'}}src={github}></img> */}
+
         </div>
     )
 }
