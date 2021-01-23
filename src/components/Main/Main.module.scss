@@ -1,0 +1,138 @@
+@import '../../App.scss';
+
+.Header {
+    color: white;
+    text-align: center;
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.Main {
+    font-family: $font-stack;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    section {
+        text-align: center;
+        margin: 0 10px;
+        height: 550px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            font-weight: bold;
+            background-color: white;
+            border-radius: 10px;
+            a {
+                color: black;
+            } 
+        }
+        img {
+            width: 100%;
+            height: 100px;
+        } 
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.Astronaut {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.Rocket img {
+    transform: rotate(315deg);
+}
+
+.Rocket img:hover {
+    position: relative;
+    animation: takeoff 3.5s infinite;
+  }
+  
+  @keyframes takeoff {
+    0%   {bottom: 0px;}
+    100%  {bottom: 100px;}
+  }
+
+  .LostInSpace img:hover {
+    position: relative;
+    animation: astronaut 6.5s infinite;
+  }
+
+  @keyframes astronaut {
+    0%   {height: 100px;}
+    100%  {height: 5px;}
+  }
+
+  .Planets img:hover {
+    position: relative;
+    animation: planets 6.5s;
+  }
+
+  @keyframes planets {
+    0%   {rotate: 10deg;}
+    100%  {rotate: 360deg;}
+  }
+
+  .Roadster img:hover {
+    position: relative;
+    animation: roadster 4.5s;
+  }
+
+  @keyframes roadster {
+    0%   {left: 0px;}
+    100%  {left: 100px;}
+  }
+
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .Main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .Main section {
+      height: 250px;
+      padding: 20 0px;
+      margin: 0 auto;
+    }
+
+    .Astronaut {
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+}
+
+@media (max-width: 732px) 
+  { 
+    .Main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      font-size: .8rem;
+    }
+    .Main section {
+            height: 250px;
+            padding: 20 0px;
+            margin: 0 auto;
+          }
+}

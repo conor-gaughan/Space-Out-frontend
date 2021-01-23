@@ -1,10 +1,11 @@
-import styles from './Nav.module.css'
+import styles from './Nav.module.scss'
 import { Link } from 'react-router-dom'
 
 function NavBar(props) {
     return (
         <nav className={styles.Nav}>
             <ul>
+                <li>Test</li>
                     {
                         props.user ?
                         <>
@@ -12,7 +13,7 @@ function NavBar(props) {
                                 <Link to="" onClick={props.handleLogout}>Logout</Link>
                             </li>
                             <li>
-                                <Link to="/dashboard">Dashboard</Link>
+                                <Link to="/">Misson Control</Link>
                             </li>
                         </>
                         :

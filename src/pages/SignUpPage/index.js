@@ -1,11 +1,13 @@
+import styles from './SignUp.module.scss'
+
 import { useState } from 'react';
 import { signup } from '../../services/userService';
 
 function SignupPage(props) {
     const [formState, setFormState] = useState({
-        firstName: "",
-        lastName: "",
-        email: "",
+        firstName: "First Name",
+        lastName: "Last Name",
+        email: "Email",
         password: ""
     })
 
@@ -31,6 +33,7 @@ function SignupPage(props) {
             await signup(formState)
             setFormState(getInitialFormState)
             props.history.push('/dashboard')
+            props.handleSignupOrLogin()
 
         } catch (error) {
             alert(error.message)
@@ -39,7 +42,7 @@ function SignupPage(props) {
     }
 
     return (
-        <div className="Page">
+        <div className={styles.SignUp}>
             <form onSubmit={handleSubmit}>
                 <input 
                 value={formState.firstName} 
@@ -65,7 +68,9 @@ function SignupPage(props) {
                 value={formState.password} 
                 onChange={handleChange} 
                 name="password" 
-                type='password'>
+                type='password'
+                placeholder='Password'
+                >
                 </input>
                 <button>Sign up</button>
             </form>

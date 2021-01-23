@@ -13,6 +13,13 @@
     
 }
 
+.Nav ul:first-child {
+    display: flex;
+    justify-content: flex-start;
+    color: red;
+    float: left;
+}
+
 .Nav > ul li {
     padding: 0 10px;
 }

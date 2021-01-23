@@ -1,5 +1,6 @@
 import { setToken, getUserFromToken, removeToken } from './tokenService';
-const BASE_URL = 'http://localhost:3001/api/users';
+// const BASE_URL = 'http://localhost:3001/api/users';
+const BASE_URL = 'https://project-3-spacex.herokuapp.com/api/users';
 function signup(user) {
     return fetch(BASE_URL + '/signup', {
         method: 'POST',
@@ -22,7 +23,6 @@ function login(credentials) {
         body: JSON.stringify(credentials)
     }).then(response => {
         if(response.ok) return response.json();
-        // error handling
         throw new Error('Bad Credentials');
     }).then(data => setToken(data.token))
 }
