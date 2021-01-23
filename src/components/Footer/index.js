@@ -1,4 +1,4 @@
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 import { Link } from 'react-router-dom'
 
 import { FaGithubSquare } from 'react-icons/fa';
@@ -13,9 +13,6 @@ function Footer() {
             <Link to='https://github.com/conor-gaughan'>
                 <FaLinkedin size={60} />
             </Link>
-        {/* <p> {new Date().getFullYear()} </p> */}
-        {/* <img style={{backgroundColor: 'red'}}src={github}></img> */}
-
         </div>
     )
 }

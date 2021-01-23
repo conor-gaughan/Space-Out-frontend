@@ -15,33 +15,27 @@ function HomePage(props) {
                         <Link to='/rockets'>
                         <img src={rocketImg} alt='rocket icon' tabIndex="1"></img>
                         <h1>Rockets</h1>
-                        {/* <p>3...2...1...</p> */}
                         </Link>
                     </section>
                     <section className={styles.LostInSpace}>
                         <Link to='/crew'>
                         <img src={crewImg} alt='astronaut icon 1' tabIndex="2"></img>
                         <h1>Crews</h1>
-                        {/* <p>Astronauts!</p> */}
                         </Link>
                     </section>
                     <section className={styles.Planets}>
                         <Link to='/launch'>
                         <img src={planetImg} alt='upcoming launches icon' tabIndex="3"></img>
                         <h1>Launches</h1>
-                        {/* <p>Upcoming launches</p> */}
                         </Link>
                     </section>
                     <section className={styles.Roadster}>
                         <Link to='roadster'>
                         <img src={roadsterImg} alt='sports car icon' tabIndex="4"></img>
                         <h1>Roadster</h1>
-                        {/* <p>Check in on Starman</p> */}
                         </Link>
                     </section>
-                
-                <img className={styles.Astronaut} src="https://images.vexels.com/media/users/3/152639/isolated/preview/506b575739e90613428cdb399175e2c8-space-astronaut-cartoon-by-vexels.png"></img>
-
+                <img alt="astronaut" className={styles.Astronaut} src="https://images.vexels.com/media/users/3/152639/isolated/preview/506b575739e90613428cdb399175e2c8-space-astronaut-cartoon-by-vexels.png"></img>
         </div>
         </>
     )

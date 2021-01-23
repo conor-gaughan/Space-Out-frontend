@@ -2,7 +2,7 @@
 
 function Favorites(props) {
     return (
-        <div>Favorites Page</div>
+        <div>To do!</div>
     )
 }
 

@@ -1,4 +1,4 @@
-import styles from './Nav.module.css'
+import styles from './Nav.module.scss'
 import { Link } from 'react-router-dom'
 
 function NavBar(props) {

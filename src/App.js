@@ -6,7 +6,6 @@ import { Switch, Route, withRouter, Redirect, Link } from 'react-router-dom';
 import NavBar from './components/Nav';
 import Footer from './components/Footer';
 import HomePage from './components/Main'
-import DashboardPage from './pages/DashboardPage'
 import SignupPage from './pages/SignUpPage'
 import LoginPage from './pages/LoginPage'
 
@@ -50,25 +49,21 @@ function App(props) {
   async function getRocketData() {
     const data = await rocketDataAPI()
     setRocketData(data)
-    // console.log('Rocket Data', data)
   }
 
   async function getCrewData() {
     const data = await crewDataAPI()
     setCrewData(data)
-    // console.log('Crew Data', data)
   }
 
   async function getLaunchData() {
     const data = await launchDataAPI()
     setLaunchData(data)
-    // console.log('Launch Data', data)
   }
 
   async function getRoadsterData() {
     const data = await roadsterDataAPI()
     setRoadsterData(data)
-    console.log('ROADSTER DATA', data)
   }
 
   useEffect(() => {
@@ -89,12 +84,7 @@ function App(props) {
         <HomePage /> 
         
         } />
-        {/* <Route exact path='/' render={props => 
-        userState.user ? 
-        <HomePage /> 
-        :
-        <Redirect to="/" />
-      } /> */}
+
         <Route exact path='/signup' render={props => 
         <SignupPage {...props} 
         handleSignupOrLogin={handleSignUpOrLogin}
@@ -136,8 +126,6 @@ function App(props) {
           <FavoritesPage 
     
         /> } />
-
-    
 
       </main>
       </Switch>

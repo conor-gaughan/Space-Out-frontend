@@ -22,7 +22,6 @@ function login(credentials) {
         body: JSON.stringify(credentials)
     }).then(response => {
         if(response.ok) return response.json();
-        // error handling
         throw new Error('Bad Credentials');
     }).then(data => setToken(data.token))
 }
