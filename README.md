@@ -4,7 +4,11 @@
 
 <h1 align="center"> SpaceX React </h1>
 
-This full-stack app highlights some of SpaceX's
+This full-stack app highlights SpaceX Rockets, Crews, Upcoming Launches, and Roadster data.
+
+### Go to space!
+
+Launch website: `LINK HERE`
 
 ### What did I use?
 
@@ -17,3 +21,5 @@ This full-stack app highlights some of SpaceX's
 - HTML5
 - API
 - JSON Web Tokens or Authentication
+
+Images of App:
