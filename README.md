@@ -8,7 +8,7 @@ This full-stack app highlights SpaceX Rockets, Crews, Upcoming Launches, and Roa
 
 ### Go to space!
 
-## [Launch website](spacexinfo.netlify.app)
+## [Launch website](https://spacexinfo.netlify.app/)
 
 ### What did I use?
 
