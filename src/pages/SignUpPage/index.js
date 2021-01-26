@@ -45,20 +45,20 @@ function SignupPage(props) {
         <div className={styles.SignUp}>
             <form onSubmit={handleSubmit}>
                 <input 
-                value={formState.firstName} 
+                value="First Name"
                 onChange={handleChange} 
                 name="firstName" 
                 type='text'>
                 </input>
                 <input 
-                value={formState.lastName} 
+                value="Last Name" 
                 onChange={handleChange} 
                 name="lastName" 
                 type='text'>  
                 </input>
                 
                 <input 
-                value={formState.email} 
+                value="Email"
                 onChange={handleChange} 
                 name="email" 
                 type='email'>

@@ -1,14 +1,14 @@
 <div align="center">
-  <img width="120px" src="https://www.flaticon.com/svg/vstatic/svg/3655/3655161.svg?token=exp=1611420766~hmac=e0e6db1764bccb481ca5226630c62d8f" />
+  <img width="120px" src="./src/images/astronomy.png" />
 </div>
 
 <h1 align="center"> SpaceX React </h1>
 
-This full-stack app highlights SpaceX Rockets, Crews, Upcoming Launches, and Roadster data.
+This full-stack app highlights SpaceX Rockets, Crews, Upcoming Launches, and Roadster data. Authentication is using JWT.
 
 ### Go to space!
 
-Launch website: `LINK HERE`
+## [Launch website](spacexinfo.netlify.app)
 
 ### What did I use?
 
@@ -20,6 +20,23 @@ Launch website: `LINK HERE`
 - Sass
 - HTML5
 - API
-- JSON Web Tokens or Authentication
+- JSON Web Tokens for Authentication
 
 Images of App:
+
+Main page
+![Main](https://i.imgur.com/IXflf4w.png)
+
+Signup
+![Signup](https://i.imgur.com/O7f78te.png)
+
+Crew page
+![Imgur](https://i.imgur.com/YayqnB5.png)
+
+Rocket Page
+![Imgur](https://i.imgur.com/whOHMjs.png)
+
+Future Enhancements:
+
+- Adding Favorites feature
+- Styled Components

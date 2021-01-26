@@ -1,10 +1,10 @@
-.SignUp {
+.SignUp form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 70vh;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 } 
 
 .SignUp form input {
@@ -13,6 +13,7 @@
     border-radius: 5px;
     border: none;
     text-align:center;
+    margin: 4px;
 }
 
 

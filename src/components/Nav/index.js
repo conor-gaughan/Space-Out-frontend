@@ -5,7 +5,6 @@ function NavBar(props) {
     return (
         <nav className={styles.Nav}>
             <ul>
-                <li>Test</li>
                     {
                         props.user ?
                         <>

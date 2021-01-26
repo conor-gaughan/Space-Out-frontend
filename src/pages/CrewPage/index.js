@@ -6,11 +6,13 @@ function CrewPage(props) {
         <div className={styles.Crew}>
             {props.crewData.map((crew, idx) => (
                 <>
-                <Link target="_blank" to={`${crew.wikipedia}`}>
+                <a target="_blank" href={`${crew.wikipedia}`}>
+                {/* <Link target="_blank" to={`${crew.wikipedia}`}> */}
                 <img src={`${crew.image}`} alt={`${crew.name}`}></img>
                 <h2>{crew.name}</h2>
                 <p>{crew.agency}</p>
-                </Link>
+                </a>
+                {/* </Link> */}
                 </>
             ))}
         </div>
