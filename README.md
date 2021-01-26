@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="120px" src="./src/images/astronomy.png" />
+  <img width="120px" src="https://i.imgur.com/0Ddo3EG.png" />
 </div>
 
 <h1 align="center"> SpaceX React </h1>
