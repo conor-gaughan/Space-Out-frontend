@@ -22,6 +22,9 @@ This full-stack app highlights SpaceX Rockets, Crews, Upcoming Launches, and Roa
 - API
 - JSON Web Tokens for Authentication
 
+Wireframe:
+![Imgur](https://i.imgur.com/98uG5Ft.png)
+
 Images of App:
 
 Main page
