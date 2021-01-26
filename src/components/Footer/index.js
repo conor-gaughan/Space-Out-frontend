@@ -6,10 +6,10 @@ import { FaLinkedin } from 'react-icons/fa';
 function Footer() {
     return (
         <div className={styles.Footer}>
-                <a target="_blank" href="https://github.com/conor-gaughan">
+                <a href="https://github.com/conor-gaughan">
                         <FaGithubSquare size={60} />
                 </a>
-            <a target="_blank" href="https://www.linkedin.com/in/conorgaughan/">
+            <a href="https://www.linkedin.com/in/conorgaughan/">
                 <FaLinkedin size={60} />
                     </a>
         
