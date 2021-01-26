@@ -32,7 +32,7 @@ function SignupPage(props) {
             event.preventDefault();
             await signup(formState)
             setFormState(getInitialFormState)
-            props.history.push('/dashboard')
+            props.history.push('/')
             props.handleSignupOrLogin()
 
         } catch (error) {
