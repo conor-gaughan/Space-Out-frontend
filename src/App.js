@@ -129,9 +129,7 @@ function App(props) {
 
       </main>
       </Switch>
-      <Link to='/'>
       <Footer />
-      </Link>
     </div>
   );
 }
