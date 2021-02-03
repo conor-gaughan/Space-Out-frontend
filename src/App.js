@@ -1,7 +1,7 @@
 import { getUser, logout } from './services/userService'
 
 import {useState, useEffect} from 'react';
-import { Switch, Route, withRouter, Redirect, Link } from 'react-router-dom';
+import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 import NavBar from './components/Nav';
 import Footer from './components/Footer';
