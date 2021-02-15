@@ -2,7 +2,7 @@
   <img width="120px" src="https://i.imgur.com/0Ddo3EG.png" />
 </div>
 
-<h1 align="center"> SpaceX React </h1>
+<h1 align="center"> Space Out </h1>
 
 This full-stack app highlights SpaceX Rockets, Crews, Upcoming Launches, and Roadster data. Authentication is using JWT.
 
