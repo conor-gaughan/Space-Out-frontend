@@ -8,7 +8,7 @@ import roadsterImg from '../../Images/003-car.svg'
 function HomePage(props) {
     return (
         <>
-        <h1 className={styles.Header}>SPACEX</h1>
+        <h1 className={styles.Header}>SPACE OUT</h1>
         <div className={styles.Main}>
             
                     <section className={styles.Rocket}>
